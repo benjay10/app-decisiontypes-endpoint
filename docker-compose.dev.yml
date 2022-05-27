@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+
+  dispatcher:
+    ports:
+      - "8085:80"
+
+  database:
+    ports:
+      - "8895:8890"
+
+  resources:
+    ports:
+      - "8086:80"
+
+  testservice:
+    image: semtech/mu-javascript-template:1.5.0-beta.3
+    ports:
+      - "85:80"
+    links:
+      - database:database
+      - resources:resources
+    volumes:
+      - ../app-decisiontypes-endpoint-test:/app:Z
+    environment:
+      NODE_ENV: "development"
+      MU_SPARQL_ENDPOINT: "http://dispatcher/sparql/"
