@@ -789,7 +789,7 @@ BesluitType:b04bc642-c892-4aae-ac1f-f6ff21362704
     besluit:decidableBy BestuurseenheidClassificatieCode:cd93f147-3ece-4308-acab-5c5ada3ec63d ,
                         BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ;
     besluit:obligationToReport "true"^^xsd:boolean ;
-    skos:definition "TODO" ;
+    skos:definition "De algemene vergadering stelt een code van goed bestuur vast." ;
     skos:prefLabel "Code van goed bestuur" ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:topConceptOf conceptscheme:BesluitType .
@@ -810,7 +810,7 @@ BesluitType:b0fcc0c3-bb33-427f-8da2-4ef3833c9060
     core:uuid "b0fcc0c3-bb33-427f-8da2-4ef3833c9060" ;
     besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ;
     besluit:obligationToReport "true"^^xsd:boolean ;
-    skos:definition "TODO" ;
+    skos:definition "Besluit van de gemeenteraad tot voorlopige of definitieve vaststelling van het gemeentelijk beleidskader (art. 6, §2 Gemeentewegendecreet)." ;
     skos:prefLabel "Vaststelling gemeentelijk beleidskader (gemeentewegen)" ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:topConceptOf conceptscheme:BesluitType .
@@ -820,7 +820,7 @@ BesluitType:f1fd8f88-95b0-4085-b766-008b5867d992
     core:uuid "f1fd8f88-95b0-4085-b766-008b5867d992" ;
     besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ;
     besluit:obligationToReport "true"^^xsd:boolean ;
-    skos:definition "TODO" ;
+    skos:definition "Besluit van de gemeenteraad tot voorlopige of definitieve vaststelling van het gemeentelijk rooilijnplan (art. 17 Gemeentewegendecreet)." ;
     skos:prefLabel "Vaststelling gemeenteweg" ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:topConceptOf conceptscheme:BesluitType .
@@ -831,7 +831,7 @@ BesluitType:4511f992-2b52-42fe-9cb6-feae6241ad26
     besluit:decidableBy BestuurseenheidClassificatieCode:cd93f147-3ece-4308-acab-5c5ada3ec63d ,
                         BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ;
     besluit:obligationToReport "true"^^xsd:boolean ;
-    skos:definition "TODO" ;
+    skos:definition "Voorstellen van de raad van bestuur van de dienstverlenende en opdrachthoudende verenigingen ter vrijwaring van de continuïteit." ;
     skos:prefLabel "Voorstellen i.v.m. het saneringsplan - Plan vrijwaring continuïteit" ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:topConceptOf conceptscheme:BesluitType .
