@@ -10,3 +10,5 @@
 (add-prefix "core"                             "http://mu.semte.ch/vocabularies/core/")
 (add-prefix "besluit"                          "http://lblod.data.gift/vocabularies/besluit/")
 (add-prefix "BestuurseenheidClassificatieCode" "http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/")
+(add-prefix "rule"                             "http://lblod.data.gift/vocabularies/notification/")
+(add-prefix "sch"                              "https://schema.org/")
