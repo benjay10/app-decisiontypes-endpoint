@@ -42,5 +42,5 @@
   :has-many   `((BestuurseenheidClassificatieCode :via ,(s-prefix "besluit:decidableBy")
                                                   :as "decidableby"))
   :resource-base (s-prefix "rule:")
-  :on-path       "notificationrules")
+  :on-path       "notificationrule")
 

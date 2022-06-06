@@ -524,7 +524,7 @@ BesluitType:e8aee49e-8762-4db2-acfe-2d5dd3c37619
     core:uuid "e8aee49e-8762-4db2-acfe-2d5dd3c37619" ;
     besluit:notificationRule rule:68836095-847c-448d-aef8-9df098360353 ;
     skos:broader BesluitType:67378dd0-5413-474b-8996-d992ef81637a ;
-    skos:definition "Besluit ?? (? Besluit tot vaststelling van de regels van een gemeentelijke onderwijsinstelling.)" ;
+    skos:definition "Besluit tot vaststelling van de regels van een gemeentelijke onderwijsinstelling." ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:prefLabel "Reglement Onderwijs" .
 
