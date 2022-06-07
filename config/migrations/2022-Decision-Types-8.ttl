@@ -216,7 +216,7 @@ BesluitDocumentType:365d561c-57c7-4523-af04-6e3c91426c56
 BesluitType:0d1278af-b69e-4152-a418-ec5cfd1c7d0b
     a skos:Concept ;
     core:uuid "0d1278af-b69e-4152-a418-ec5cfd1c7d0b" ;
-    besluit:notificationRule rule:0d1278af-b69e-4152-a418-ec5cfd1c7d0b ;
+    besluit:notificationRule rule:2237f45f-631b-4641-8c9a-cc9458702e27 ;
     skos:broader BesluitType:67378dd0-5413-474b-8996-d992ef81637a ;
     skos:definition "Besluit van de gemeenteraad of van het college van burgemeester en schepenen dat de politie op het wegverkeer regelt op gemeentewegen die in speciale beschermingszones gelegen zijn." ;
     skos:inScheme conceptscheme:BesluitType ;
@@ -748,7 +748,7 @@ rule:eff68c1a-1cd9-42f9-901d-e3567927c781
 
 # Rules for BesluitTypes
 
-rule:0d1278af-b69e-4152-a418-ec5cfd1c7d0b
+rule:2237f45f-631b-4641-8c9a-cc9458702e27
     a rule:NotificationRule ;
     core:uuid "2237f45f-631b-4641-8c9a-cc9458702e27" ;
     sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
