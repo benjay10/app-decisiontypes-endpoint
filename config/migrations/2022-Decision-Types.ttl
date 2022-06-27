@@ -146,6 +146,19 @@ BestuurseenheidClassificatieCode:cd93f147-3ece-4308-acab-5c5ada3ec63d
 # Besluit Document Types
 ###############################################################################
 
+# A number of historical types that are not valid anymore through rules
+
+BesluitDocumentType:13fefad6-a9d6-4025-83b5-e4cbee3a8965
+    a skos:Concept ;
+	core:uuid "13fefad6-a9d6-4025-83b5-e4cbee3a8965" ;
+	besluit:notificationRule rule:7104f2e3-88c3-48db-9d51-3dbb26ecf0b0 ;
+    skos:definition "Overzicht van de formeel aanvaard te behandelen onderwerpen op een zitting." ;
+    skos:inScheme conceptscheme:BesluitDocumentType ;
+    skos:prefLabel "Agenda" ;
+    skos:topConceptOf conceptscheme:BesluitDocumentType .
+
+# Non-historical types (normal types)
+
 BesluitDocumentType:0ee460b1-5ef4-4d4a-b5e1-e2d7c1d5086e
     a skos:Concept ;
 	core:uuid "0ee460b1-5ef4-4d4a-b5e1-e2d7c1d5086e" ;
@@ -186,7 +199,7 @@ BesluitDocumentType:f4b1b40a-4ac4-4e12-bdd2-84966f274edc
     a skos:Concept ;
 	core:uuid "f4b1b40a-4ac4-4e12-bdd2-84966f274edc" ;
     besluit:notificationRule rule:70bda0fc-2c52-4821-9848-f193adab0e2f ;
-    skos:definition "TODO" ;
+    skos:definition "Inzendingen van de Vlaamse Gemeenschapscommissie die onder het algemeen toezicht vallen." ;
     skos:inScheme conceptscheme:BesluitDocumentType ;
     skos:prefLabel "Algemeen Toezicht" ;
     skos:topConceptOf conceptscheme:BesluitDocumentType .
@@ -195,7 +208,7 @@ BesluitDocumentType:d60eb90b-926b-4c64-b87c-866c0cf92f0a
     a skos:Concept ;
 	core:uuid "d60eb90b-926b-4c64-b87c-866c0cf92f0a" ;
     besluit:notificationRule rule:f177fc07-c3d6-4bc8-8b34-7e74a11d395b ;
-    skos:definition "TODO" ;
+    skos:definition "Inzendingen van de Vlaamse Gemeenschapscommissie die onder het bijzonder toezicht vallen." ;
     skos:inScheme conceptscheme:BesluitDocumentType ;
     skos:prefLabel "Bijzonder Administratief Toezicht" ;
     skos:topConceptOf conceptscheme:BesluitDocumentType .
@@ -209,9 +222,89 @@ BesluitDocumentType:365d561c-57c7-4523-af04-6e3c91426c56
     skos:prefLabel "Overzicht vergoedingen en presentiegelden" ;
     skos:topConceptOf conceptscheme:BesluitDocumentType .
 
+# Added besluit document types after having the document checked
+
+BesluitDocumentType:18833df2-8c9e-4edd-87fd-b5c252337349
+	a skos:Concept ;
+	core:uuid "18833df2-8c9e-4edd-87fd-b5c252337349" ;
+	besluit:notificationRule rule:54849d26-2038-4dbe-bae4-ad3265aa898f ;
+	skos:definition "Gecoördineerd indienen van de budgetten en budgetwijzigingen van de besturen van de eredienst door het centraal bestuur van de eredienst." ;
+    skos:inScheme conceptscheme:BesluitDocumentType ;
+    skos:prefLabel "Budgetten(wijzigingen) van besturen van de eredienst" ;
+    skos:topConceptOf conceptscheme:BesluitDocumentType .
+
+BesluitDocumentType:2c9ada23-1229-4c7e-a53e-acddc9014e4e
+	a skos:Concept ;
+	core:uuid "2c9ada23-1229-4c7e-a53e-acddc9014e4e" ;
+	besluit:notificationRule rule:19c9b5a4-ce6a-4a27-93a2-da27bc716eeb ;
+	skos:definition "Gecoördineerd indienen van de meerjarenplannen en meerjarenplanwijzigingen van de besturen van de eredienst door het centraal bestuur van de eredienst." ;
+    skos:inScheme conceptscheme:BesluitDocumentType ;
+    skos:prefLabel "Meerjarenplannen(wijzigingen) van de besturen van de eredienst" ;
+    skos:topConceptOf conceptscheme:BesluitDocumentType .
+	
+BesluitDocumentType:672bf096-dccd-40af-ab60-bd7de15cc461
+	a skos:Concept ;
+	core:uuid "672bf096-dccd-40af-ab60-bd7de15cc461" ;
+	besluit:notificationRule rule:98732e3a-b888-4d14-9f67-abb4228a4528 ;
+	skos:definition "Jaarrekeningen van de besturen van de eredienst" ;
+    skos:inScheme conceptscheme:BesluitDocumentType ;
+    skos:prefLabel "Gezamenlijk indienen van de jaarrekeningen van de besturen van de eredienst door het centraal bestuur van de eredienst." ;
+    skos:topConceptOf conceptscheme:BesluitDocumentType .
+
+BesluitDocumentType:9d5bfaca-bbf2-49dd-a830-769f91a6377b
+	a skos:Concept ;
+	core:uuid "9d5bfaca-bbf2-49dd-a830-769f91a6377b" ;
+	besluit:notificationRule rule:80da1c33-82c2-466c-9a2c-993a7bdb0ab8 ;
+	skos:definition "Uittreksel van een besluit van een zitting." ;
+    skos:inScheme conceptscheme:BesluitDocumentType ;
+    skos:prefLabel "Uittreksel" ;
+    skos:topConceptOf conceptscheme:BesluitDocumentType .
+ 
+
 ###############################################################################
 # Besluit Types
 ###############################################################################
+
+# A number of historical types that are not valid anymore through rules
+
+BesluitType:9f12dc58-18ba-4a1f-9e7a-cf73d0b4f025
+    a skos:Concept ;
+    core:uuid "9f12dc58-18ba-4a1f-9e7a-cf73d0b4f025" ;
+	besluit:notificationRule rule:dd84dbf3-d4a0-463d-9106-2931c2778071 ;
+    skos:definition "Besluit van de gemeenteraad over het budget van een autonoom gemeentebedrijf." ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:prefLabel "Besluit budget AGB" ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:82d0696e-1225-4684-826a-923b2453f5e3
+    a skos:Concept ;
+	core:uuid "82d0696e-1225-4684-826a-923b2453f5e3" ;
+	besluit:notificationRule rule:aeaed7d2-d802-414d-8a82-54f6bf0b0863 ;
+    skos:definition "Besluit van de provincieraad over het budget van een autonoom provinciebedrijf." ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:prefLabel "Besluit over budget APB" ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:70ae4d36-de0c-425d-9dbe-3b6deef8343c
+    a skos:Concept ;
+    core:uuid "70ae4d36-de0c-425d-9dbe-3b6deef8343c" ;
+	besluit:notificationRule rule:bc933c34-a8b7-49ee-9523-a6951a8277f9 ;
+    skos:definition "TODO" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:prefLabel "Besluit over budget(wijziging) OCMW-vereniging" ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:40831a2c-771d-4b41-9720-0399998f1873
+    a skos:Concept ;
+    core:uuid "40831a2c-771d-4b41-9720-0399998f1873" ;
+	besluit:notificationRule rule:1ca4279a-0b7e-4c2d-bf9f-ec91df50a1d0 ;
+    skos:definition "Besluit tot vaststelling van het budget." ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:prefLabel "Budget" ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+
+# Non-historical types (normal types)
 
 BesluitType:0d1278af-b69e-4152-a418-ec5cfd1c7d0b
     a skos:Concept ;
@@ -248,15 +341,6 @@ BesluitType:25deb453-ae3e-4d40-8027-36cdb48ab738
     skos:definition "Besluit tot vaststelling of wijziging van een deontologische code." ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:prefLabel "Deontologische Code" .
-
-BesluitType:2f189152-1786-4b55-a3a9-d7f06de63f1c
-    a skos:Concept ;
-    core:uuid "2f189152-1786-4b55-a3a9-d7f06de63f1c" ;
-    besluit:notificationRule rule:ea6f8b9e-d058-40d4-acf3-d65caa14bcae ;
-    skos:definition "Besluit tot vaststelling van het meerjarenplan of tot vaststelling van de aanpassing van het meerjarenplan conform BBC2020." ;
-    skos:inScheme conceptscheme:BesluitType ;
-    skos:prefLabel "Meerjarenplan(aanpassing) BBC2020" ;
-    skos:topConceptOf conceptscheme:BesluitType .
 
 BesluitType:380674ee-0894-4c41-bcc1-9deaeb9d464c
     a skos:Concept ;
@@ -480,7 +564,7 @@ BesluitType:d9c3d177-6dc6-4775-8c6a-1055a9cbdcc6
     besluit:notificationRule rule:d05e8bfb-af93-4a1d-bb92-1fd3ff174486 ;
     skos:definition "Besluit van de raad voor maatschappelijk welzijn tot wijziging van de statuten van een vereniging of vennootschap voor maatschappelijk welzijn." ;
     skos:inScheme conceptscheme:BesluitType ;
-    skos:prefLabel "Wijziging ocmw-vereniging" ;
+    skos:prefLabel "Wijziging statuten ocmw-vereniging" ;
     skos:topConceptOf conceptscheme:BesluitType .
 
 BesluitType:dbc58656-b0a5-4e43-8e9e-701acb75f9b0
@@ -504,7 +588,8 @@ BesluitType:df261490-cc74-4f80-b783-41c35e720b46
 BesluitType:e27ef237-29de-49b8-be22-4ee2ab2d4e5b
     a skos:Concept ;
 	core:uuid "e27ef237-29de-49b8-be22-4ee2ab2d4e5b" ;
-    besluit:notificationRule rule:937ff493-2e7d-45d9-a23f-aa84454cd2a1 ;
+    besluit:notificationRule rule:937ff493-2e7d-45d9-a23f-aa84454cd2a1 ,
+	                         rule:cb5e825f-440a-468d-a1ea-3aa9d6b8efd9 ;
     skos:definition "Besluit tot toetreding tot een rechtspersoon, andere dan een extern verzelfstandigd agentschap of intergemeentelijk samenwerkingsverband en andere dan een vereniging of vennootschap voor maatschappelijk welzijn." ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:prefLabel "Toetreding rechtspersoon" ;
@@ -575,7 +660,8 @@ BesluitType:f8c070bd-96e4-43a1-8c6e-532bcd771251
 BesluitType:fb21d14b-734b-48f4-bd4e-888163fd08e8
     a skos:Concept ;
     core:uuid "fb21d14b-734b-48f4-bd4e-888163fd08e8" ;
-    besluit:notificationRule rule:2540a331-67f6-47d2-9a12-ea191b315be5 ;
+    besluit:notificationRule rule:2540a331-67f6-47d2-9a12-ea191b315be5 ,
+	                         rule:7fde1283-f580-4452-a5c4-f2234990d6e9 ;
     skos:definition "Besluit tot vaststelling van het geheel van of wijzigingen aan de rechtspositieregeling van het personeel." ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:prefLabel "Rechtspositieregeling (RPR)" ;
@@ -594,7 +680,7 @@ BesluitType:ec8652a6-2c49-4955-8d59-fd08c8c0a6e1
     a skos:Concept ;
     core:uuid "ec8652a6-2c49-4955-8d59-fd08c8c0a6e1" ;
     besluit:notificationRule rule:e88a5f18-7c9d-456c-8bfa-e3323bbb29f3 ;
-    skos:definition "TODO" ;
+    skos:definition "Besluit van de raad van bestuur van het autonoom provinciebedrijf betreffende retributies." ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:prefLabel "Besluit APB over retributies" ;
     skos:topConceptOf conceptscheme:BesluitType .
@@ -603,7 +689,7 @@ BesluitType:c6b696c0-26f8-4e87-b7e8-071b81471ddc
     a skos:Concept ;
     core:uuid "c6b696c0-26f8-4e87-b7e8-071b81471ddc" ;
     besluit:notificationRule rule:0d6d6159-b06c-4498-a25c-a02f9802d38e ;
-    skos:definition "TODO" ;
+    skos:definition "Akte van verlenging van de duurtijd van de projectvereniging." ;
     skos:prefLabel "Verlenging duurtijd van projectvereniging" ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:topConceptOf conceptscheme:BesluitType .
@@ -612,7 +698,7 @@ BesluitType:bf72e38a-2c73-4484-b82f-c642a4c39d0c
     a skos:Concept ;
     core:uuid "bf72e38a-2c73-4484-b82f-c642a4c39d0c" ;
     besluit:notificationRule rule:82955112-f66e-49dc-8ab3-1064b1ae7d14 ;
-    skos:definition "TODO" ;
+    skos:definition "Authentieke akte van de statuten (art. 477 DLB)" ;
     skos:prefLabel "Authentieke akte van de statuten (art. 477 DLB)" ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:topConceptOf conceptscheme:BesluitType .
@@ -630,7 +716,7 @@ BesluitType:cb361927-1aab-4016-bd8a-1a84841391ba
     a skos:Concept ;
     core:uuid "cb361927-1aab-4016-bd8a-1a84841391ba" ;
     besluit:notificationRule rule:a430ee06-dbe6-4847-b18f-982a47c46b5e ;
-    skos:definition "TODO" ;
+    skos:definition "De gemeenteraad of districtsraad kan een collectieve constructieve motie van wantrouwen aannemen." ;
     skos:prefLabel "Collectieve motie van wantrouwen" ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:topConceptOf conceptscheme:BesluitType .
@@ -662,11 +748,210 @@ BesluitType:4511f992-2b52-42fe-9cb6-feae6241ad26
     skos:inScheme conceptscheme:BesluitType ;
     skos:topConceptOf conceptscheme:BesluitType .
 
+# Added after the document was already sent in for correcting
+
+BesluitType:00527d30-e60b-4fa5-9152-f42dddd10ff6
+    a skos:Concept ;
+    core:uuid "00527d30-e60b-4fa5-9152-f42dddd10ff6" ;
+    besluit:notificationRule rule:78dfdb6a-fcf8-4892-bf6c-e944e4478aca ;
+    skos:definition "Besluit over vaststelling meerjarenplanaanpassing eredienstbestuur" ;
+    skos:prefLabel "Besluit van de gemeenteraad over de vaststelling van de aanpassing van het meerjarenplan van een eredienstbestuur." ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:09ac9b9b-2585-4195-8c11-8cf8592de213
+    a skos:Concept ;
+    core:uuid "09ac9b9b-2585-4195-8c11-8cf8592de213" ;
+    besluit:notificationRule rule:642675b6-bdc0-4c5c-aa53-11721161ac69 ;
+    skos:definition "Besluit van de gemeenteraad tot oprichting van een extern verzelfstandigd agentschap." ;
+    skos:prefLabel "Oprichting van een EVA" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:2c2f5e3c-827f-4ad7-906a-176f3bda08ce
+    a skos:Concept ;
+    core:uuid "2c2f5e3c-827f-4ad7-906a-176f3bda08ce" ;
+    besluit:notificationRule rule:0967a2bb-449f-4cfa-917d-984d43300ed6 ;
+    skos:definition "Besluit van de raad voor maatschappelijk welzijn tot oprichting van een vereniging voor maatschappelijk welzijn." ;
+    skos:prefLabel "Oprichting van een vereniging voor maatschappelijk welzijn" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:2dca7056-06aa-44f0-b8ca-4e1002cdd119
+    a skos:Concept ;
+    core:uuid "2dca7056-06aa-44f0-b8ca-4e1002cdd119" ;
+    besluit:notificationRule rule:362a25b4-d2fe-42fa-8b35-a900ae519fcc ;
+    skos:definition "Besluit van de raad voor maatschappelijk welzijn tot toetreding tot een vennootschap voor maatschappelijk welzijn." ;
+    skos:prefLabel "Toetreding tot een vennootschap voor maatschappelijk welzijn" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:4c22ef0a-f808-41dd-9c9f-2aff17fd851f
+    a skos:Concept ;
+    core:uuid "4c22ef0a-f808-41dd-9c9f-2aff17fd851f" ;
+	skos:broader BesluitType:efa4ec5a-b006-453f-985f-f986ebae11bc ;
+    besluit:notificationRule rule:4ca66d23-ee10-4f94-9dc1-622e00af58ee ;
+    skos:definition "Besluit van de gemeenteraad tot heffing, wijziging of opheffing van een contantbelasting." ;
+    skos:prefLabel "Contantbelasting" ;
+    skos:inScheme conceptscheme:BesluitType ;
+
+BesluitType:5226e23d-617d-48b9-9c00-3d679ae88fec
+    a skos:Concept ;
+    core:uuid "5226e23d-617d-48b9-9c00-3d679ae88fec" ;
+    besluit:notificationRule rule:7c1e6d45-e8f3-4cb4-907c-ad752da341c6 ;
+    skos:definition "Besluit van de gemeenteraad of provincieraad tot wijziging van de statuten van een autonoom gemeente- of provinciebedrijf." ;
+    skos:prefLabel "Statutenwijziging autonoom bedrijf" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:54b61cbd-349f-41c4-9c8a-7e8e67d08347
+    a skos:Concept ;
+    core:uuid "54b61cbd-349f-41c4-9c8a-7e8e67d08347" ;
+    besluit:notificationRule rule:b7fc7d2d-be1c-463c-b357-c3042062b4ca ;
+    skos:definition "Vaststelling van de eindrekening." ;
+    skos:prefLabel "Eindrekening" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:6199a44b-0d6c-407c-833a-73abb104efce
+    a skos:Concept ;
+    core:uuid "6199a44b-0d6c-407c-833a-73abb104efce" ;
+    besluit:notificationRule rule:1d8a96b6-8ba5-420f-ae61-dde64af94894 ;
+    skos:definition "Besluit van de raad voor maatschappelijk welzijn tot oprichting van een vereniging of vennootschap voor maatschappelijk welzijn." ;
+    skos:prefLabel "Oprichting of toetreding vereniging of vennootschap voor maatschappelijk welzijn" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:8597e056-b96d-4213-ad4c-37338f2aaf35
+    a skos:Concept ;
+    core:uuid "8597e056-b96d-4213-ad4c-37338f2aaf35" ;
+	skos:broader BesluitType:efa4ec5a-b006-453f-985f-f986ebae11bc ;
+    besluit:notificationRule rule:0b998f99-1553-42a2-a3ce-e2d7533baa10 ;
+    skos:definition "Besluit van de gemeenteraad tot heffing, wijziging of opheffing van een kohierbelasting." ;
+    skos:prefLabel "Kohierbelasting" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:8d8a75bf-f639-44ae-bcce-50b8f760cc3c
+    a skos:Concept ;
+    core:uuid "8d8a75bf-f639-44ae-bcce-50b8f760cc3c" ;
+    besluit:notificationRule rule:a4cd104c-b991-40cb-a064-50bc3049c4ed ;
+    skos:definition "Besluit van de gemeenteraad over de vaststelling van het meerjarenplan van een eredienstbestuur." ;
+    skos:prefLabel "Besluit over vaststelling van meerjarenplan eredienstbestuur" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:94657ec2-e8a1-411f-bb96-d0ea517d7051
+    a skos:Concept ;
+    core:uuid "94657ec2-e8a1-411f-bb96-d0ea517d7051" ;
+    besluit:notificationRule rule:9a3bcaf4-5f63-4455-bac8-125eeca2f4f7 ;
+    skos:definition "Besluit van de gemeenteraad tot deelname in een extern verzelfstandigd agentschap." ;
+    skos:prefLabel "Deelname in een EVA" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:9a02d21f-fdc4-455e-8892-c2ae1d33759a
+    a skos:Concept ;
+    core:uuid "9a02d21f-fdc4-455e-8892-c2ae1d33759a" ;
+    besluit:notificationRule rule:340e84ff-63ac-47b0-a285-7f2a35617469 ;
+    skos:definition "Besluit van de gemeenteraad tot wijziging van de statuten van een intergemeentelijk samenwerkingsverband met rechtspersoonlijkheid." ;
+    skos:prefLabel "Statutenwijziging rechtspersoon IGS" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:a8cdb80d-d409-40ed-bb8b-ddfd0acb28df
+    a skos:Concept ;
+    core:uuid "a8cdb80d-d409-40ed-bb8b-ddfd0acb28df" ;
+    besluit:notificationRule rule:c9409515-13db-4924-8875-834680c318dd ;
+    skos:definition "Besluit van de raad voor maatschappelijk welzijn tot toetreding tot een vereniging voor maatschappelijk welzijn." ;
+    skos:prefLabel "Toetreding tot een vereniging voor maatschappelijk welzijn" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:b2d0734d-13d0-44b4-9af8-1722933c5288
+    a skos:Concept ;
+    core:uuid "b2d0734d-13d0-44b4-9af8-1722933c5288" ;
+    besluit:notificationRule rule:6cb2a639-4bf2-4a6a-8ce6-f390e8bceafd ;
+    skos:broader BesluitType:efa4ec5a-b006-453f-985f-f986ebae11bc ;
+    skos:definition "Besluit van de gemeenteraad tot heffing, wijziging of opheffing van een aanvullende belasting of opcentiem." ;
+    skos:prefLabel "Aanvullende belasting of opcentiem" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:bdb04f43-97d2-4be2-aa92-8affd1f3fec8
+    a skos:Concept ;
+    core:uuid "bdb04f43-97d2-4be2-aa92-8affd1f3fec8" ;
+    besluit:notificationRule rule:3573ba35-a2f8-403e-8647-746053e87bd9 ;
+    skos:definition "Besluit van de gemeenteraad over de vaststelling van het meerjarenplan van een autonoom gemeentebedrijf." ;
+    skos:prefLabel "Besluit over vaststelling van meerjarenplan AGB" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:c76a04b4-cf41-44e1-b597-94c0b3628357
+    a skos:Concept ;
+    core:uuid "c76a04b4-cf41-44e1-b597-94c0b3628357" ;
+    besluit:notificationRule rule:f05826aa-b6af-4a85-a125-c7f467816d3c ;
+    skos:definition "Besluit van de gemeenteraad over de vaststelling van het meerjarenplan van een autonoom provinciebedrijf." ;
+    skos:prefLabel "Besluit over vaststelling van meerjarenplan APB" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:e2928231-d377-48c7-98b4-3bb2f7de65db
+    a skos:Concept ;
+    core:uuid "e2928231-d377-48c7-98b4-3bb2f7de65db" ;
+    besluit:notificationRule rule:5d6cb7ab-6226-4c59-9bb6-ee8eb8f307c0 ;
+    skos:definition "Besluit van de gemeenteraad over de vaststelling van de wijziging van het budget van een eredienstbestuur." ;
+    skos:prefLabel "Besluit over vaststelling budgetwijziging eredienstbestuur" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:e6425cd1-26f2-4cd8-aa0f-1e9b65619c3a
+    a skos:Concept ;
+    core:uuid "e6425cd1-26f2-4cd8-aa0f-1e9b65619c3a" ;
+    besluit:notificationRule rule:0623a48e-6188-46fb-90d4-5ad93612aee4 ;
+    skos:definition "Besluit van de gemeenteraad over de vaststelling van het budget van een eredienstbestuur." ;
+    skos:prefLabel "Besluit over vaststelling budget eredienstbestuur" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:f1d16307-164c-4278-87b9-1d3b1d968f67
+    a skos:Concept ;
+    core:uuid "f1d16307-164c-4278-87b9-1d3b1d968f67" ;
+    besluit:notificationRule rule:7ce3f363-3ff9-4f45-a861-60c5eb070fbb ;
+    skos:definition "Besluit van de raad voor maatschappelijk welzijn tot wijziging van de statuten van een vereniging of vennootschap voor maatschappelijk welzijn." ;
+    skos:prefLabel "Statutenwijziging vereniging of vennootschap voor maatschappelijk welzijn" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
+BesluitType:f4ba730e-3f12-4c2f-81cf-31922b6da166
+    a skos:Concept ;
+    core:uuid "f4ba730e-3f12-4c2f-81cf-31922b6da166" ;
+    besluit:notificationRule rule:27356e2f-1360-4c21-8e27-13039ea77238 ;
+    skos:definition "Besluit van de gemeenteraad tot oprichting van een intergemeentelijk samenwerkingsverband met rechtspersoonlijkheid." ;
+    skos:prefLabel "Oprichting rechtspersoon IGS" ;
+    skos:inScheme conceptscheme:BesluitType ;
+    skos:topConceptOf conceptscheme:BesluitType .
+
 ###############################################################################
 # Notification Rules
 ###############################################################################
 
 # Rules for BesluitDocumentTypes
+
+rule:7104f2e3-88c3-48db-9d51-3dbb26ecf0b0
+	a rule:NotificationRule ;
+	core:uuid "7104f2e3-88c3-48db-9d51-3dbb26ecf0b0" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ,
+						BestuurseenheidClassificatieCode:36a82ba0-7ff1-4697-a9dd-2e94df73b721 ,
+						BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ,
+						BestuurseenheidClassificatieCode:cc4e2d67-603b-4784-9b61-e50bac1ec089 ,
+						BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ,
+						BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ,
+						BestuurseenheidClassificatieCode:cd93f147-3ece-4308-acab-5c5ada3ec63d ,
+						BestuurseenheidClassificatieCode:b156b67f-c5f4-4584-9b30-4c090be02fdc ,
+						BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 .
+	besluit:obligationToReport "false"^^xsd:boolean .
 
 rule:2d237403-0cbb-4a38-8221-0a201e0ffe5a
     a rule:NotificationRule ;
@@ -748,6 +1033,40 @@ rule:eff68c1a-1cd9-42f9-901d-e3567927c781
 
 # Rules for BesluitTypes
 
+rule:dd84dbf3-d4a0-463d-9106-2931c2778071
+	a rule:NotificationRule ;
+	core:uuid "dd84dbf3-d4a0-463d-9106-2931c2778071" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ;
+	besluit:obligationToReport "false"^^xsd:boolean ;
+
+rule:aeaed7d2-d802-414d-8a82-54f6bf0b0863
+	a rule:NotificationRule ;
+	core:uuid "aeaed7d2-d802-414d-8a82-54f6bf0b0863" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 ;
+	besluit:obligationToReport "false"^^xsd:boolean ;
+
+rule:bc933c34-a8b7-49ee-9523-a6951a8277f9
+	a rule:NotificationRule ;
+	core:uuid "bc933c34-a8b7-49ee-9523-a6951a8277f9"
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ;
+	besluit:obligationToReport "false"^^xsd:boolean ;
+
+rule:1ca4279a-0b7e-4c2d-bf9f-ec91df50a1d0
+	a rule:NotificationRule ;
+	core:uuid "1ca4279a-0b7e-4c2d-bf9f-ec91df50a1d0" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime ;
+    besluit:decidableBy BestuurseenheidClassificatieCode:36a82ba0-7ff1-4697-a9dd-2e94df73b721 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ,
+                        BestuurseenheidClassificatieCode:80310756-ce0a-4a1b-9b8e-7c01b6cc7a2d ,
+                        BestuurseenheidClassificatieCode:cc4e2d67-603b-4784-9b61-e50bac1ec089 ;
+	besluit:obligationToReport "false"^^xsd:boolean ;
+
 rule:2237f45f-631b-4641-8c9a-cc9458702e27
     a rule:NotificationRule ;
     core:uuid "2237f45f-631b-4641-8c9a-cc9458702e27" ;
@@ -787,14 +1106,6 @@ rule:7390dbf0-2c62-4726-9a72-c0fc4acef9cc
                         BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ,
                         BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ,
                         BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 ;
-    besluit:obligationToReport "true"^^xsd:boolean .
-
-rule:ea6f8b9e-d058-40d4-acf3-d65caa14bcae
-    a rule:NotificationRule ;
-    core:uuid "ea6f8b9e-d058-40d4-acf3-d65caa14bcae" ;
-    sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-    #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
-    besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ;
     besluit:obligationToReport "true"^^xsd:boolean .
 
 rule:73476782-d219-4174-8526-0207223c3738
@@ -1057,11 +1368,18 @@ rule:937ff493-2e7d-45d9-a23f-aa84454cd2a1
     core:uuid "937ff493-2e7d-45d9-a23f-aa84454cd2a1" ;
     sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
     #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
-    besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ,
-                        BestuurseenheidClassificatieCode:cc4e2d67-603b-4784-9b61-e50bac1ec089 ,
+    besluit:decidableBy BestuurseenheidClassificatieCode:cc4e2d67-603b-4784-9b61-e50bac1ec089 ,
                         BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ,
                         BestuurseenheidClassificatieCode:cd93f147-3ece-4308-acab-5c5ada3ec63d ;
     besluit:obligationToReport "true"^^xsd:boolean .
+
+rule:cb5e825f-440a-468d-a1ea-3aa9d6b8efd9
+    a rule:NotificationRule ;
+    core:uuid "937ff493-2e7d-45d9-a23f-aa84454cd2a1" ;
+    sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+    #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
+    besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ;
+    besluit:obligationToReport "false"^^xsd:boolean .
 
 rule:a1e04cc0-b356-4339-b772-b7009d600651
     a rule:NotificationRule ;
@@ -1114,7 +1432,7 @@ rule:ed64948d-5ed0-409e-9bf6-4732ea3f8a56
                         BestuurseenheidClassificatieCode:cc4e2d67-603b-4784-9b61-e50bac1ec089 ,
                         BestuurseenheidClassificatieCode:cd93f147-3ece-4308-acab-5c5ada3ec63d ,
                         BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ;
-    besluit:obligationToReport "true"^^xsd:boolean .
+    besluit:obligationToReport "false"^^xsd:boolean .
 
 rule:36ba6a6a-f098-4a28-a254-9f90e4e54b66
     a rule:NotificationRule ;
@@ -1139,8 +1457,7 @@ rule:b6c89131-c2ed-4d43-86d5-91242e883d1d
                         BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ,
                         BestuurseenheidClassificatieCode:80310756-ce0a-4a1b-9b8e-7c01b6cc7a2d ,
                         BestuurseenheidClassificatieCode:cc4e2d67-603b-4784-9b61-e50bac1ec089 ;
-    besluit:obligationToReport "true"^^xsd:boolean ;
-    core:uuid "f56c645d-b8e1-4066-813d-e213f5bc529f" .
+    besluit:obligationToReport "true"^^xsd:boolean .
 
 rule:7b0514f7-4841-42f2-99a7-fc31a684771c
     a rule:NotificationRule ;
@@ -1156,16 +1473,23 @@ rule:2540a331-67f6-47d2-9a12-ea191b315be5
     core:uuid "2540a331-67f6-47d2-9a12-ea191b315be5" ;
     sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
     #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
-    besluit:decidableBy BestuurseenheidClassificatieCode:36a82ba0-7ff1-4697-a9dd-2e94df73b721 ,
-                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 ,
+    besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 ,
                         BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ,
                         BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ,
-                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ,
                         BestuurseenheidClassificatieCode:80310756-ce0a-4a1b-9b8e-7c01b6cc7a2d ,
                         BestuurseenheidClassificatieCode:cc4e2d67-603b-4784-9b61-e50bac1ec089 ,
                         BestuurseenheidClassificatieCode:cd93f147-3ece-4308-acab-5c5ada3ec63d ,
                         BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ;
     besluit:obligationToReport "true"^^xsd:boolean .
+
+rule:7fde1283-f580-4452-a5c4-f2234990d6e9
+    a rule:NotificationRule ;
+    core:uuid "7fde1283-f580-4452-a5c4-f2234990d6e9" ;
+    sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+    #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
+    besluit:decidableBy BestuurseenheidClassificatieCode:36a82ba0-7ff1-4697-a9dd-2e94df73b721 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ;
+    besluit:obligationToReport "false"^^xsd:boolean .
 
 rule:b3a161a0-3188-457d-8234-c29a01e33829
     a rule:NotificationRule ;
@@ -1245,3 +1569,195 @@ rule:fae69732-4d22-40db-a2a7-550235190337
                         BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ;
     besluit:obligationToReport "true"^^xsd:boolean .
 
+# TODO:
+# Added all these rules due to the "corrections"
+# Need to correct them again after all missing data is added
+
+rule:04d80595-6766-4c53-af06-f97304cbc899
+    a rule:NotificationRule ;
+    core:uuid "04d80595-6766-4c53-af06-f97304cbc899" ;
+    #sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+    #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
+    #besluit:decidableBy BestuurseenheidClassificatieCode:cd93f147-3ece-4308-acab-5c5ada3ec63d ,
+    #                    BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ;
+    besluit:obligationToReport "true"^^xsd:boolean .
+
+rule:54849d26-2038-4dbe-bae4-ad3265aa898f
+	a rule:NotificationRule ;
+	core:uuid "54849d26-2038-4dbe-bae4-ad3265aa898f" ;
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:f9cac08a-13c1-49da-9bcb-f650b0604054 .
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:19c9b5a4-ce6a-4a27-93a2-da27bc716eeb
+	a rule:NotificationRule ;
+	core:uuid "19c9b5a4-ce6a-4a27-93a2-da27bc716eeb" ;
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:f9cac08a-13c1-49da-9bcb-f650b0604054 .
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:98732e3a-b888-4d14-9f67-abb4228a4528
+	a rule:NotificationRule ;
+	core:uuid "98732e3a-b888-4d14-9f67-abb4228a4528" ;
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:f9cac08a-13c1-49da-9bcb-f650b0604054 .
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:80da1c33-82c2-466c-9a2c-993a7bdb0ab8
+	a rule:NotificationRule ;
+	core:uuid "80da1c33-82c2-466c-9a2c-993a7bdb0ab8" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:78dfdb6a-fcf8-4892-bf6c-e944e4478aca
+	a rule:NotificationRule ;
+	core:uuid "78dfdb6a-fcf8-4892-bf6c-e944e4478aca" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:642675b6-bdc0-4c5c-aa53-11721161ac69
+	a rule:NotificationRule ;
+	core:uuid "642675b6-bdc0-4c5c-aa53-11721161ac69" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:0967a2bb-449f-4cfa-917d-984d43300ed6
+	a rule:NotificationRule ;
+	core:uuid "0967a2bb-449f-4cfa-917d-984d43300ed6" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:362a25b4-d2fe-42fa-8b35-a900ae519fcc
+	a rule:NotificationRule ;
+	core:uuid "362a25b4-d2fe-42fa-8b35-a900ae519fcc" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:4ca66d23-ee10-4f94-9dc1-622e00af58ee
+	a rule:NotificationRule ;
+	core:uuid "4ca66d23-ee10-4f94-9dc1-622e00af58ee" ;
+    sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+    #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
+    besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ;
+    besluit:obligationToReport "true"^^xsd:boolean .
+
+rule:7c1e6d45-e8f3-4cb4-907c-ad752da341c6
+	a rule:NotificationRule ;
+	core:uuid "7c1e6d45-e8f3-4cb4-907c-ad752da341c6" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:b7fc7d2d-be1c-463c-b357-c3042062b4ca
+	a rule:NotificationRule ;
+	core:uuid "b7fc7d2d-be1c-463c-b357-c3042062b4ca" ;
+	sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:66ec74fd-8cfc-4e16-99c6-350b35012e86 .
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:1d8a96b6-8ba5-420f-ae61-dde64af94894
+	a rule:NotificationRule ;
+	core:uuid "1d8a96b6-8ba5-420f-ae61-dde64af94894" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:0b998f99-1553-42a2-a3ce-e2d7533baa10
+	a rule:NotificationRule ;
+	core:uuid "0b998f99-1553-42a2-a3ce-e2d7533baa10" ;
+    sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+    #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
+    besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ;
+    besluit:obligationToReport "true"^^xsd:boolean .
+
+rule:a4cd104c-b991-40cb-a064-50bc3049c4ed
+	a rule:NotificationRule ;
+	core:uuid "a4cd104c-b991-40cb-a064-50bc3049c4ed" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:9a3bcaf4-5f63-4455-bac8-125eeca2f4f7
+	a rule:NotificationRule ;
+	core:uuid "9a3bcaf4-5f63-4455-bac8-125eeca2f4f7" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:340e84ff-63ac-47b0-a285-7f2a35617469
+	a rule:NotificationRule ;
+	core:uuid "340e84ff-63ac-47b0-a285-7f2a35617469" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:c9409515-13db-4924-8875-834680c318dd
+	a rule:NotificationRule ;
+	core:uuid "c9409515-13db-4924-8875-834680c318dd" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:6cb2a639-4bf2-4a6a-8ce6-f390e8bceafd
+	a rule:NotificationRule ;
+	core:uuid "6cb2a639-4bf2-4a6a-8ce6-f390e8bceafd" ;
+    sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+    #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
+    besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ,
+                        BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ;
+    besluit:obligationToReport "true"^^xsd:boolean .
+
+rule:3573ba35-a2f8-403e-8647-746053e87bd9
+	a rule:NotificationRule ;
+	core:uuid "3573ba35-a2f8-403e-8647-746053e87bd9" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:f05826aa-b6af-4a85-a125-c7f467816d3c
+	a rule:NotificationRule ;
+	core:uuid "f05826aa-b6af-4a85-a125-c7f467816d3c" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:5d6cb7ab-6226-4c59-9bb6-ee8eb8f307c0
+	a rule:NotificationRule ;
+	core:uuid "5d6cb7ab-6226-4c59-9bb6-ee8eb8f307c0" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:0623a48e-6188-46fb-90d4-5ad93612aee4
+	a rule:NotificationRule ;
+	core:uuid "0623a48e-6188-46fb-90d4-5ad93612aee4" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:7ce3f363-3ff9-4f45-a861-60c5eb070fbb
+	a rule:NotificationRule ;
+	core:uuid "7ce3f363-3ff9-4f45-a861-60c5eb070fbb" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
+
+rule:27356e2f-1360-4c21-8e27-13039ea77238
+	a rule:NotificationRule ;
+	core:uuid "27356e2f-1360-4c21-8e27-13039ea77238" .
+	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
+	#besluit:obligationToReport "false"^^xsd:dateTime .
