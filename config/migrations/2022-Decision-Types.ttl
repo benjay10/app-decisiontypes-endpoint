@@ -793,7 +793,7 @@ BesluitType:4c22ef0a-f808-41dd-9c9f-2aff17fd851f
     besluit:notificationRule rule:4ca66d23-ee10-4f94-9dc1-622e00af58ee ;
     skos:definition "Besluit van de gemeenteraad tot heffing, wijziging of opheffing van een contantbelasting." ;
     skos:prefLabel "Contantbelasting" ;
-    skos:inScheme conceptscheme:BesluitType ;
+    skos:inScheme conceptscheme:BesluitType .
 
 BesluitType:5226e23d-617d-48b9-9c00-3d679ae88fec
     a skos:Concept ;
@@ -950,7 +950,7 @@ rule:7104f2e3-88c3-48db-9d51-3dbb26ecf0b0
 						BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ,
 						BestuurseenheidClassificatieCode:cd93f147-3ece-4308-acab-5c5ada3ec63d ,
 						BestuurseenheidClassificatieCode:b156b67f-c5f4-4584-9b30-4c090be02fdc ,
-						BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 .
+						BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 ;
 	besluit:obligationToReport "false"^^xsd:boolean .
 
 rule:2d237403-0cbb-4a38-8221-0a201e0ffe5a
@@ -1038,21 +1038,21 @@ rule:dd84dbf3-d4a0-463d-9106-2931c2778071
 	core:uuid "dd84dbf3-d4a0-463d-9106-2931c2778071" ;
 	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime ;
 	besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ;
-	besluit:obligationToReport "false"^^xsd:boolean ;
+	besluit:obligationToReport "false"^^xsd:boolean .
 
 rule:aeaed7d2-d802-414d-8a82-54f6bf0b0863
 	a rule:NotificationRule ;
 	core:uuid "aeaed7d2-d802-414d-8a82-54f6bf0b0863" ;
 	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime ;
 	besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000000 ;
-	besluit:obligationToReport "false"^^xsd:boolean ;
+	besluit:obligationToReport "false"^^xsd:boolean .
 
 rule:bc933c34-a8b7-49ee-9523-a6951a8277f9
 	a rule:NotificationRule ;
-	core:uuid "bc933c34-a8b7-49ee-9523-a6951a8277f9"
+	core:uuid "bc933c34-a8b7-49ee-9523-a6951a8277f9" ;
 	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime ;
 	besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000001 ;
-	besluit:obligationToReport "false"^^xsd:boolean ;
+	besluit:obligationToReport "false"^^xsd:boolean .
 
 rule:1ca4279a-0b7e-4c2d-bf9f-ec91df50a1d0
 	a rule:NotificationRule ;
@@ -1065,7 +1065,7 @@ rule:1ca4279a-0b7e-4c2d-bf9f-ec91df50a1d0
                         BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ,
                         BestuurseenheidClassificatieCode:80310756-ce0a-4a1b-9b8e-7c01b6cc7a2d ,
                         BestuurseenheidClassificatieCode:cc4e2d67-603b-4784-9b61-e50bac1ec089 ;
-	besluit:obligationToReport "false"^^xsd:boolean ;
+	besluit:obligationToReport "false"^^xsd:boolean .
 
 rule:2237f45f-631b-4641-8c9a-cc9458702e27
     a rule:NotificationRule ;
