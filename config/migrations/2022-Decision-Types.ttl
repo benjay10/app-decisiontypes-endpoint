@@ -222,8 +222,6 @@ BesluitDocumentType:365d561c-57c7-4523-af04-6e3c91426c56
     skos:prefLabel "Overzicht vergoedingen en presentiegelden" ;
     skos:topConceptOf conceptscheme:BesluitDocumentType .
 
-# Added besluit document types after having the document checked
-
 BesluitDocumentType:18833df2-8c9e-4edd-87fd-b5c252337349
 	a skos:Concept ;
 	core:uuid "18833df2-8c9e-4edd-87fd-b5c252337349" ;
@@ -289,7 +287,7 @@ BesluitType:70ae4d36-de0c-425d-9dbe-3b6deef8343c
     a skos:Concept ;
     core:uuid "70ae4d36-de0c-425d-9dbe-3b6deef8343c" ;
 	besluit:notificationRule rule:bc933c34-a8b7-49ee-9523-a6951a8277f9 ;
-    skos:definition "TODO" ;
+    skos:definition "Besluit over budget(wijziging) OCMW-vereniging" ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:prefLabel "Besluit over budget(wijziging) OCMW-vereniging" ;
     skos:topConceptOf conceptscheme:BesluitType .
@@ -302,7 +300,6 @@ BesluitType:40831a2c-771d-4b41-9720-0399998f1873
     skos:inScheme conceptscheme:BesluitType ;
     skos:prefLabel "Budget" ;
     skos:topConceptOf conceptscheme:BesluitType .
-
 
 # Non-historical types (normal types)
 
@@ -747,8 +744,6 @@ BesluitType:4511f992-2b52-42fe-9cb6-feae6241ad26
     skos:prefLabel "Voorstellen i.v.m. het saneringsplan - Plan vrijwaring continuïteit" ;
     skos:inScheme conceptscheme:BesluitType ;
     skos:topConceptOf conceptscheme:BesluitType .
-
-# Added after the document was already sent in for correcting
 
 BesluitType:00527d30-e60b-4fa5-9152-f42dddd10ff6
     a skos:Concept ;
@@ -1375,7 +1370,7 @@ rule:937ff493-2e7d-45d9-a23f-aa84454cd2a1
 
 rule:cb5e825f-440a-468d-a1ea-3aa9d6b8efd9
     a rule:NotificationRule ;
-    core:uuid "937ff493-2e7d-45d9-a23f-aa84454cd2a1" ;
+    core:uuid "cb5e825f-440a-468d-a1ea-3aa9d6b8efd9" ;
     sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
     #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
     besluit:decidableBy BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ;
@@ -1569,74 +1564,44 @@ rule:fae69732-4d22-40db-a2a7-550235190337
                         BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ;
     besluit:obligationToReport "true"^^xsd:boolean .
 
-# TODO:
-# Added all these rules due to the "corrections"
-# Need to correct them again after all missing data is added
-
-rule:04d80595-6766-4c53-af06-f97304cbc899
-    a rule:NotificationRule ;
-    core:uuid "04d80595-6766-4c53-af06-f97304cbc899" ;
-    #sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-    #sch:validThrough "2022-12-01T01:00:00"^^xsd:dateTime ;
-    #besluit:decidableBy BestuurseenheidClassificatieCode:cd93f147-3ece-4308-acab-5c5ada3ec63d ,
-    #                    BestuurseenheidClassificatieCode:d01bb1f6-2439-4e33-9c25-1fc295de2e71 ;
-    besluit:obligationToReport "true"^^xsd:boolean .
-
 rule:54849d26-2038-4dbe-bae4-ad3265aa898f
 	a rule:NotificationRule ;
 	core:uuid "54849d26-2038-4dbe-bae4-ad3265aa898f" ;
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	besluit:decidableBy BestuurseenheidClassificatieCode:f9cac08a-13c1-49da-9bcb-f650b0604054 .
-	#besluit:obligationToReport "false"^^xsd:dateTime .
-
-rule:19c9b5a4-ce6a-4a27-93a2-da27bc716eeb
-	a rule:NotificationRule ;
-	core:uuid "19c9b5a4-ce6a-4a27-93a2-da27bc716eeb" ;
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	besluit:decidableBy BestuurseenheidClassificatieCode:f9cac08a-13c1-49da-9bcb-f650b0604054 .
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:f9cac08a-13c1-49da-9bcb-f650b0604054 ;
+	besluit:obligationToReport "true"^^xsd:dateTime .
 
 rule:98732e3a-b888-4d14-9f67-abb4228a4528
 	a rule:NotificationRule ;
 	core:uuid "98732e3a-b888-4d14-9f67-abb4228a4528" ;
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	besluit:decidableBy BestuurseenheidClassificatieCode:f9cac08a-13c1-49da-9bcb-f650b0604054 .
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:f9cac08a-13c1-49da-9bcb-f650b0604054 ;
+	besluit:obligationToReport "true"^^xsd:dateTime .
 
 rule:80da1c33-82c2-466c-9a2c-993a7bdb0ab8
 	a rule:NotificationRule ;
-	core:uuid "80da1c33-82c2-466c-9a2c-993a7bdb0ab8" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "80da1c33-82c2-466c-9a2c-993a7bdb0ab8" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
 
 rule:78dfdb6a-fcf8-4892-bf6c-e944e4478aca
 	a rule:NotificationRule ;
-	core:uuid "78dfdb6a-fcf8-4892-bf6c-e944e4478aca" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "78dfdb6a-fcf8-4892-bf6c-e944e4478aca" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
 
 rule:642675b6-bdc0-4c5c-aa53-11721161ac69
 	a rule:NotificationRule ;
-	core:uuid "642675b6-bdc0-4c5c-aa53-11721161ac69" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "642675b6-bdc0-4c5c-aa53-11721161ac69" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
 
 rule:0967a2bb-449f-4cfa-917d-984d43300ed6
 	a rule:NotificationRule ;
-	core:uuid "0967a2bb-449f-4cfa-917d-984d43300ed6" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "0967a2bb-449f-4cfa-917d-984d43300ed6" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
 
 rule:362a25b4-d2fe-42fa-8b35-a900ae519fcc
 	a rule:NotificationRule ;
-	core:uuid "362a25b4-d2fe-42fa-8b35-a900ae519fcc" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "362a25b4-d2fe-42fa-8b35-a900ae519fcc" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
 
 rule:4ca66d23-ee10-4f94-9dc1-622e00af58ee
 	a rule:NotificationRule ;
@@ -1651,24 +1616,20 @@ rule:4ca66d23-ee10-4f94-9dc1-622e00af58ee
 
 rule:7c1e6d45-e8f3-4cb4-907c-ad752da341c6
 	a rule:NotificationRule ;
-	core:uuid "7c1e6d45-e8f3-4cb4-907c-ad752da341c6" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "7c1e6d45-e8f3-4cb4-907c-ad752da341c6" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
 
 rule:b7fc7d2d-be1c-463c-b357-c3042062b4ca
 	a rule:NotificationRule ;
 	core:uuid "b7fc7d2d-be1c-463c-b357-c3042062b4ca" ;
 	sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	besluit:decidableBy BestuurseenheidClassificatieCode:66ec74fd-8cfc-4e16-99c6-350b35012e86 .
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	besluit:decidableBy BestuurseenheidClassificatieCode:66ec74fd-8cfc-4e16-99c6-350b35012e86 ;
+	besluit:obligationToReport "false"^^xsd:dateTime .
 
 rule:1d8a96b6-8ba5-420f-ae61-dde64af94894
 	a rule:NotificationRule ;
-	core:uuid "1d8a96b6-8ba5-420f-ae61-dde64af94894" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "1d8a96b6-8ba5-420f-ae61-dde64af94894" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
 
 rule:0b998f99-1553-42a2-a3ce-e2d7533baa10
 	a rule:NotificationRule ;
@@ -1683,31 +1644,60 @@ rule:0b998f99-1553-42a2-a3ce-e2d7533baa10
 
 rule:a4cd104c-b991-40cb-a064-50bc3049c4ed
 	a rule:NotificationRule ;
-	core:uuid "a4cd104c-b991-40cb-a064-50bc3049c4ed" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "a4cd104c-b991-40cb-a064-50bc3049c4ed" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
 
 rule:9a3bcaf4-5f63-4455-bac8-125eeca2f4f7
 	a rule:NotificationRule ;
-	core:uuid "9a3bcaf4-5f63-4455-bac8-125eeca2f4f7" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "9a3bcaf4-5f63-4455-bac8-125eeca2f4f7" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
 
 rule:340e84ff-63ac-47b0-a285-7f2a35617469
 	a rule:NotificationRule ;
-	core:uuid "340e84ff-63ac-47b0-a285-7f2a35617469" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "340e84ff-63ac-47b0-a285-7f2a35617469" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
 
 rule:c9409515-13db-4924-8875-834680c318dd
 	a rule:NotificationRule ;
-	core:uuid "c9409515-13db-4924-8875-834680c318dd" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
+	core:uuid "c9409515-13db-4924-8875-834680c318dd" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
+
+rule:3573ba35-a2f8-403e-8647-746053e87bd9
+	a rule:NotificationRule ;
+	core:uuid "3573ba35-a2f8-403e-8647-746053e87bd9" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
+
+rule:f05826aa-b6af-4a85-a125-c7f467816d3c
+	a rule:NotificationRule ;
+	core:uuid "f05826aa-b6af-4a85-a125-c7f467816d3c" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
+
+rule:5d6cb7ab-6226-4c59-9bb6-ee8eb8f307c0
+	a rule:NotificationRule ;
+	core:uuid "5d6cb7ab-6226-4c59-9bb6-ee8eb8f307c0" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
+
+rule:0623a48e-6188-46fb-90d4-5ad93612aee4
+	a rule:NotificationRule ;
+	core:uuid "0623a48e-6188-46fb-90d4-5ad93612aee4" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
+
+rule:7ce3f363-3ff9-4f45-a861-60c5eb070fbb
+	a rule:NotificationRule ;
+	core:uuid "7ce3f363-3ff9-4f45-a861-60c5eb070fbb" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
+
+rule:27356e2f-1360-4c21-8e27-13039ea77238
+	a rule:NotificationRule ;
+	core:uuid "27356e2f-1360-4c21-8e27-13039ea77238" ;
+	sch:validThrough "2019-01-01T01:00:00"^^xsd:dateTime .
+
+rule:19c9b5a4-ce6a-4a27-93a2-da27bc716eeb
+	a rule:NotificationRule ;
+	core:uuid "19c9b5a4-ce6a-4a27-93a2-da27bc716eeb" ;
+	sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
+	besluit:decidableBy BestuurseenheidClassificatieCode:f9cac08a-13c1-49da-9bcb-f650b0604054 ;
+	besluit:obligationToReport "true"^^xsd:dateTime .
 
 rule:6cb2a639-4bf2-4a6a-8ce6-f390e8bceafd
 	a rule:NotificationRule ;
@@ -1719,45 +1709,3 @@ rule:6cb2a639-4bf2-4a6a-8ce6-f390e8bceafd
                         BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000002 ,
                         BestuurseenheidClassificatieCode:5ab0e9b8a3b2ca7c5e000003 ;
     besluit:obligationToReport "true"^^xsd:boolean .
-
-rule:3573ba35-a2f8-403e-8647-746053e87bd9
-	a rule:NotificationRule ;
-	core:uuid "3573ba35-a2f8-403e-8647-746053e87bd9" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
-
-rule:f05826aa-b6af-4a85-a125-c7f467816d3c
-	a rule:NotificationRule ;
-	core:uuid "f05826aa-b6af-4a85-a125-c7f467816d3c" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
-
-rule:5d6cb7ab-6226-4c59-9bb6-ee8eb8f307c0
-	a rule:NotificationRule ;
-	core:uuid "5d6cb7ab-6226-4c59-9bb6-ee8eb8f307c0" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
-
-rule:0623a48e-6188-46fb-90d4-5ad93612aee4
-	a rule:NotificationRule ;
-	core:uuid "0623a48e-6188-46fb-90d4-5ad93612aee4" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
-
-rule:7ce3f363-3ff9-4f45-a861-60c5eb070fbb
-	a rule:NotificationRule ;
-	core:uuid "7ce3f363-3ff9-4f45-a861-60c5eb070fbb" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
-
-rule:27356e2f-1360-4c21-8e27-13039ea77238
-	a rule:NotificationRule ;
-	core:uuid "27356e2f-1360-4c21-8e27-13039ea77238" .
-	#sch:validFrom "2022-05-01T01:00:00"^^xsd:dateTime ;
-	#besluit:decidableBy BestuurseenheidClassificatieCode:... ;
-	#besluit:obligationToReport "false"^^xsd:dateTime .
