@@ -7,7 +7,7 @@
 @prefix                             core: <http://mu.semte.ch/vocabularies/core/> .
 @prefix                          besluit: <http://lblod.data.gift/vocabularies/besluit/> .
 @prefix BestuurseenheidClassificatieCode: <http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/> .
-@prefix                              sch: <https://schema.org/> .
+@prefix                              sch: <http://schema.org/> .
 @prefix                             rule: <http://lblod.data.gift/vocabularies/notification/> .
 @prefix                           lblodRule: <http://data.lblod.info/id/notification-rule/>.
 
